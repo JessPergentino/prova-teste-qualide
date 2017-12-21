@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pagina Inicial</title>
+</head>
+<body>
+	<form action="" id="form">
+		Nome: <input type="text" id="nome"> <br> 
+		Sobrenome: <input type="text" id="sobrenome"> <br> 
+		
+		<input type="button" id="botao" value="Clique Aqui" onclick="concatenar()"> <br>
+
+		<span id="nomeSobrenome"></span> <br>
+
+	</form>
+	
+	<script type="text/javascript">
+		function concatenar() {
+			var nome = document.getElementById('nome').value;
+			var sobrenome = document.getElementById('sobrenome').value;
+			document.getElementById('nomeSobrenome').innerHTML = nome + " "
+					+ sobrenome;
+		}
+	</script>
+
+</body>
+</html>
