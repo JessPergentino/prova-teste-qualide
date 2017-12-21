@@ -1,0 +1,17 @@
+﻿Story:
+
+	Como programador x
+	eu desejo testar a pagina de concatenacao
+	
+Narrative:
+	Tenho uma pagina html
+	onde irei passar o nome e o sobrenome
+	para concatenar o nome e o sobrenome
+	Exibirei os nomes concatenados
+	
+Scenario: 
+	Given estou na tela de concatena��o
+	When informo o prenome Maria
+	And informo o sobrenome Silva 
+	And solicito a concatena��o dos nomes
+	Then � exibido o nome Maria Silva
